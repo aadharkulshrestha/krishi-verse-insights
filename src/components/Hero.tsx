@@ -45,12 +45,16 @@ export default function Hero() {
             <div className="relative w-full max-w-[500px]">
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-krishi-green-light/20 rounded-full blur-3xl" />
               <img 
-                src="/farmer-app.jpg" 
-                alt="Farmer using KrishiVerse app"
+                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1000&auto=format&fit=crop"
+                alt="Farmer using smart technology in field" 
                 className="relative z-10 rounded-lg shadow-2xl border-4 border-white w-full h-auto object-cover animate-float"
                 onError={(e) => {
                   // Fallback to placeholder if image fails to load
-                  e.currentTarget.src = "/placeholder.svg";
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1000&auto=format&fit=crop";
+                  // Second fallback
+                  e.currentTarget.onerror = () => {
+                    e.currentTarget.src = "/placeholder.svg";
+                  };
                 }}
               />
               <div className="absolute -bottom-5 -right-5 bg-white rounded-lg p-4 shadow-lg z-20 max-w-[200px]">

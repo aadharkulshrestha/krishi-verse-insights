@@ -16,7 +16,7 @@ export default function Testimonials() {
       quote: "KrishiVerse has transformed how I manage my 5-acre farm. The early pest detection saved my entire tomato crop last season!",
       author: "Rajesh Kumar",
       location: "Punjab, India",
-      image: "/testimonial-1.jpg",
+      image: "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?w=800&auto=format&fit=crop&q=80",
       fallbackImage: "/placeholder.svg",
       role: "Small-scale Farmer"
     },
@@ -24,7 +24,7 @@ export default function Testimonials() {
       quote: "The irrigation recommendations have helped me reduce water usage by 25%. My yields are actually better with less water!",
       author: "Maria Gonzalez",
       location: "Jalisco, Mexico",
-      image: "/testimonial-2.jpg",
+      image: "https://images.unsplash.com/photo-1595181965407-2a44631a3337?w=800&auto=format&fit=crop&q=80",
       fallbackImage: "/placeholder.svg",
       role: "Organic Farmer"
     },
@@ -32,7 +32,7 @@ export default function Testimonials() {
       quote: "The local language support means everyone on my farm can use it. The satellite insights have made decision-making so much clearer.",
       author: "Wei Chen",
       location: "Sichuan, China",
-      image: "/testimonial-3.jpg",
+      image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=800&auto=format&fit=crop&q=80",
       fallbackImage: "/placeholder.svg",
       role: "Agricultural Cooperative Manager"
     },
@@ -40,7 +40,7 @@ export default function Testimonials() {
       quote: "Since using KrishiVerse, my fertilizer costs have gone down 30% as I'm applying exactly what's needed, where it's needed.",
       author: "Aisha Nkosi",
       location: "Tanzania",
-      image: "/testimonial-4.jpg",
+      image: "https://images.unsplash.com/photo-1589923188900-85unlike20-a712d60e87336?w=800&auto=format&fit=crop&q=80",
       fallbackImage: "/placeholder.svg",
       role: "Mid-size Farm Owner"
     }
