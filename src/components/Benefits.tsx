@@ -23,29 +23,29 @@ export default function Benefits() {
               <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-krishi-green-light/20 rounded-full blur-2xl" />
               
               <div className="grid grid-cols-2 gap-4 md:gap-6 relative z-10">
-                <div className="col-span-2">
+              <div>
                   <img
-                    src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?w=800&auto=format&fit=crop&q=80"
-                    alt="Smart farming with drones"
-                    className="w-full h-48 md:h-64 object-cover rounded-lg shadow-lg"
-                    onError={(e) => {
-                      // Fallback to placeholder if image fails to load
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?w=800&auto=format&fit=crop&q=80";
-                      // Second fallback
-                      e.currentTarget.onerror = () => {
-                        e.currentTarget.src = "/placeholder.svg";
-                      };
-                    }}
-                  />
-                </div>
-                <div>
-                  <img
-                    src="https://images.unsplash.com/photo-1630173314503-544080c4ccf7?w=800&auto=format&fit=crop&q=80"
+                    src="/img1.jpg"
                     alt="Soil monitoring sensor"
                     className="w-full h-40 object-cover rounded-lg shadow-lg"
                     onError={(e) => {
                       // Fallback to placeholder if image fails to load
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1630173314503-544080c4ccf7?w=800&auto=format&fit=crop&q=80";
+                      e.currentTarget.src = "/img1.jpg";
+                      // Second fallback
+                      e.currentTarget.onerror = () => {
+                        e.currentTarget.src = "/img1.jpg";
+                      };
+                    }}
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/I2.jpg"
+                    alt="Healthy crops"
+                    className="w-full h-40 object-cover rounded-lg shadow-lg"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1530507629858-e3759c371e54?w=800&auto=format&fit=crop&q=80";
                       // Second fallback
                       e.currentTarget.onerror = () => {
                         e.currentTarget.src = "/placeholder.svg";
@@ -55,7 +55,22 @@ export default function Benefits() {
                 </div>
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1530507629858-e3759c371e54?w=800&auto=format&fit=crop&q=80"
+                    src="/I3.jpg"
+                    alt="Soil monitoring sensor"
+                    className="w-full h-40 object-cover rounded-lg shadow-lg"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.currentTarget.src = "/img1.jpg";
+                      // Second fallback
+                      e.currentTarget.onerror = () => {
+                        e.currentTarget.src = "/img1.jpg";
+                      };
+                    }}
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/I4.jpg"
                     alt="Healthy crops"
                     className="w-full h-40 object-cover rounded-lg shadow-lg"
                     onError={(e) => {
