@@ -16,28 +16,32 @@ export default function Testimonials() {
       quote: "KrishiVerse has transformed how I manage my 5-acre farm. The early pest detection saved my entire tomato crop last season!",
       author: "Rajesh Kumar",
       location: "Punjab, India",
-      image: "https://images.unsplash.com/photo-1626029322216-d7b9c86e1705?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/testimonial-1.jpg",
+      fallbackImage: "/placeholder.svg",
       role: "Small-scale Farmer"
     },
     {
       quote: "The irrigation recommendations have helped me reduce water usage by 25%. My yields are actually better with less water!",
       author: "Maria Gonzalez",
       location: "Jalisco, Mexico",
-      image: "https://images.unsplash.com/photo-1599893242842-1b612aea6379?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/testimonial-2.jpg",
+      fallbackImage: "/placeholder.svg",
       role: "Organic Farmer"
     },
     {
       quote: "The local language support means everyone on my farm can use it. The satellite insights have made decision-making so much clearer.",
       author: "Wei Chen",
       location: "Sichuan, China",
-      image: "https://images.unsplash.com/photo-1595412126439-e932d261a572?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/testimonial-3.jpg",
+      fallbackImage: "/placeholder.svg",
       role: "Agricultural Cooperative Manager"
     },
     {
       quote: "Since using KrishiVerse, my fertilizer costs have gone down 30% as I'm applying exactly what's needed, where it's needed.",
       author: "Aisha Nkosi",
       location: "Tanzania",
-      image: "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/testimonial-4.jpg",
+      fallbackImage: "/placeholder.svg",
       role: "Mid-size Farm Owner"
     }
   ];
@@ -64,9 +68,13 @@ export default function Testimonials() {
                       <div className="relative">
                         <AspectRatio ratio={16 / 9}>
                           <img 
-                            src={testimonial.image} 
+                            src={testimonial.image}
                             alt={`${testimonial.author}'s farm`}
                             className="object-cover w-full h-full"
+                            onError={(e) => {
+                              // Fallback to placeholder if image fails to load
+                              e.currentTarget.src = testimonial.fallbackImage;
+                            }}
                           />
                         </AspectRatio>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

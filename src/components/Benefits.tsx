@@ -25,23 +25,35 @@ export default function Benefits() {
               <div className="grid grid-cols-2 gap-4 md:gap-6 relative z-10">
                 <div className="col-span-2">
                   <img
-                    src="https://images.unsplash.com/photo-1625757840851-86619e0f0229?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    src="/farming-drone.jpg"
                     alt="Smart farming with drones"
                     className="w-full h-48 md:h-64 object-cover rounded-lg shadow-lg"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.currentTarget.src = "/placeholder.svg";
+                    }}
                   />
                 </div>
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1567596296091-0a257a628237?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                    src="/soil-sensor.jpg"
                     alt="Soil monitoring sensor"
                     className="w-full h-40 object-cover rounded-lg shadow-lg"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.currentTarget.src = "/placeholder.svg";
+                    }}
                   />
                 </div>
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1530507629858-e3759c3e00d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                    src="/crops.jpg"
                     alt="Healthy crops"
                     className="w-full h-40 object-cover rounded-lg shadow-lg"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.currentTarget.src = "/placeholder.svg";
+                    }}
                   />
                 </div>
               </div>

@@ -30,9 +30,13 @@ export default function CTA() {
             
             <div className="hidden md:flex justify-end">
               <img 
-                src="https://images.unsplash.com/photo-1589924691265-2f2d61cb0587?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                src="/mobile-app-demo.jpg" 
                 alt="Mobile app demonstration" 
-                className="rounded-lg shadow-lg border-4 border-white h-64 object-cover" 
+                className="rounded-lg shadow-lg border-4 border-white h-64 object-cover"
+                onError={(e) => {
+                  // Fallback to placeholder if image fails to load
+                  e.currentTarget.src = "/placeholder.svg";
+                }}
               />
             </div>
           </div>
